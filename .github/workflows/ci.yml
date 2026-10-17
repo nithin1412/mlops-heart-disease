@@ -32,4 +32,6 @@ jobs:
         run: ruff check src tests
 
       - name: Run tests
+        env:
+          PYTHONPATH: .
         run: pytest -v
