@@ -1,0 +1,24 @@
+
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+.env
+mlruns/
+mlflow.db
+*.sqlite
+*.sqlite3
+.DS_Store
+
+# Keep raw and processed datasets in the repository
+# unless they contain restricted or sensitive data.
+
+# Keep model artifacts required to run the API
+# (do not ignore artifacts/)
+
+# Keep EDA figures, evaluation results and screenshots
+# (do not ignore reports/ or screenshots/)
+
+# Local logs and temporary files
+*.log

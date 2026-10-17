@@ -1,0 +1,51 @@
+{
+  "raw_file": "data\\raw\\heart_disease_raw.csv",
+  "clean_file": "data\\processed\\heart_disease_clean.csv",
+  "raw_rows": 303,
+  "duplicate_rows_removed": 0,
+  "rows_removed_for_invalid_or_missing_target": 0,
+  "clean_rows": 303,
+  "feature_count": 13,
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target": "target",
+  "target_mapping": "num == 0 -> 0 (absence); num in {1,2,3,4} -> 1 (presence)",
+  "missing_values_per_feature": {
+    "age": 0,
+    "sex": 0,
+    "cp": 0,
+    "trestbps": 0,
+    "chol": 0,
+    "fbs": 0,
+    "restecg": 0,
+    "thalach": 0,
+    "exang": 0,
+    "oldpeak": 0,
+    "slope": 0,
+    "ca": 4,
+    "thal": 2
+  },
+  "target_counts": {
+    "0": 164,
+    "1": 139
+  },
+  "validation": "PASS",
+  "notes": [
+    "Feature missing values are retained as missing for training-time imputation.",
+    "Imputation/scaling must be fitted only on training folds to avoid data leakage.",
+    "Exact duplicate rows are removed before modelling."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "dataset_name": "Heart Disease",
+  "uci_dataset_id": 45,
+  "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "doi": "10.24432/C52P4X",
+  "license": "CC BY 4.0",
+  "retrieval_method": "ucimlrepo.fetch_ucirepo(id=45)",
+  "raw_file": "data\\raw\\heart_disease_raw.csv",
+  "rows": 303,
+  "columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal",
+    "num"
+  ],
+  "feature_columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "original_target": "num",
+  "binary_target_mapping": {
+    "0": 0,
+    "1,2,3,4": 1
+  },
+  "missing_marker": "? (normalized to blank/NA)",
+  "note": "Review target values and missingness during validation before modelling."
+}

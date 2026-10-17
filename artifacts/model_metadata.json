@@ -1,0 +1,23 @@
+{
+  "best_model": "logistic_regression",
+  "selection_metric": "mean cross-validation ROC-AUC",
+  "best_cv_roc_auc": 0.9007747486008355,
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target_mapping": "0=absence, 1=presence",
+  "test_size": 0.2,
+  "random_state": 42
+}
